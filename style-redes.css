@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #ebdada;
+}
+
+header {
+  background-color: #f1831d;
+  padding: 1rem;
+}
+
+nav {
+  background-color: rgb(231, 230, 226);
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav h1 {
+  margin: 0;
+  font-family:sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(71, 68, 68);
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+  color: rgb(64, 148, 24);
+  font-weight: bold;
+  transition: 1s;
+  
+}
+
+
+.redes-sociales {
+  text-align: center;
+  padding: 2rem;
+}
+
+.redes-sociales h2 {
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contenedor-redes img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.contenedor-redes img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #E04E39;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  position: relative;
+  top: 5px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .imagen-texto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen-texto img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Media queries para redes sociales */
+@media (max-width: 768px) {
+  .contenedor-redes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-redes img {
+    width: 80px;
+    height: 80px;
+  }
+}
